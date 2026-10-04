@@ -1,7 +1,6 @@
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class HorseTest {
 
@@ -14,8 +13,9 @@ public class HorseTest {
     public void nullNameMessage() {
         try {
             new Horse(null, 1,1);
+            fail();
         } catch (IllegalArgumentException e) {
-            assertEquals("Name cannot be null", e.getMessage());
+            assertEquals("Name cannot be null.", e.getMessage());
         }
     }
 }
