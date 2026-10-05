@@ -23,9 +23,8 @@ public class Hippodrome {
     }
 
     public void move() {
-//        horses.get(0).move();
         horses.forEach(Horse::move);
-        horses.forEach(Horse::move);
+//        horses.forEach(Horse::move);
     }
 
     public Horse getWinner() {
